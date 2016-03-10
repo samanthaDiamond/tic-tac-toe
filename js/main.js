@@ -1,3 +1,4 @@
+
 var TicTacToe = {
   numClicks: 0,
   board : [["_", "_", "_"],
@@ -8,16 +9,6 @@ var TicTacToe = {
       this.board[row][col] = player;
     }
   },
-  gameComplete: function () {
-    swal("Congratulations, you won!", "Ready for another game?");
-    $(".x, .o").removeClass("o").removeClass("x");
-    return this.board = [["_", "_", "_"],["_", "_", "_"],["_", "_", "_"]];
-  },
-  noWinner: function () {
-    swal("No winner, better luck next time", "Ready for another game?");
-    $(".x, .o").removeClass("o").removeClass("x");
-    return this.board = [["_", "_", "_"],["_", "_", "_"],["_", "_", "_"]];
-  },
   checkForWinner : function () {
     for (var i = 0; i < 3; i++) {
       if (this.board[i][0] === this.board[i][1] && this.board[i][1] === this.board[i][2] && this.board[i][0] !== "_") {
@@ -25,7 +16,7 @@ var TicTacToe = {
         return true;
       } else if (this.board[0][i] === this.board[1][i] && this.board[1][i] === this.board[2][i] && this.board[0][i] !== "_") {
         this.gameComplete("winner");
-        return true; 
+        return true;
       }
     }
     if (this.board[0][0] === this.board[1][1] && this.board[1][1] === this.board[2][2] && this.board[2][2] !== "_") {
@@ -38,7 +29,17 @@ var TicTacToe = {
     if ( $(".x, .o").length === 9 ) {
         this.noWinner();
     }
-  }
+  },
+  noWinner: function () {
+    swal("No winner, better luck next time", "Ready for another game?");
+    $(".x, .o").removeClass("o").removeClass("x");
+    return this.board = [["_", "_", "_"],["_", "_", "_"],["_", "_", "_"]];
+  },
+  gameComplete: function () {
+    swal("Congratulations, you won!", "Ready for another game?");
+    $(".x, .o").removeClass("o").removeClass("x");
+    return this.board = [["_", "_", "_"],["_", "_", "_"],["_", "_", "_"]];
+  },
 };
 
 $(document).ready(function () {

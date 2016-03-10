@@ -14,8 +14,6 @@ body {
   background: #3CD5DC;
   background-repeat: no-repeat;
   background-size: cover;
-
-
   width: 960px;
   text-align: center;
   margin: 0 auto;
@@ -29,7 +27,6 @@ body {
   margin: 5px;
   box-sizing: border-box;
   display: inline-block;
-  /*box-shadow: 4px 4px 4px #777777;*/
 }
 
 .x {
@@ -43,8 +40,3 @@ body {
   background-repeat: no-repeat;
   background-size: 145px 145px;
 }
-
-
-/*difficulties - image covering entire page instead of many small images
-    background-repeat: no-repeat;
-    background-size: cover;*/
