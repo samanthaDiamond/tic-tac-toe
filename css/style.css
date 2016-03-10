@@ -6,6 +6,10 @@ h1 {
   font-family: 'Special Elite', cursive;
 }
 
+h1:hover {
+  font-size: 80px;
+}
+
 body {
   background: #3CD5DC;
   background-repeat: no-repeat;
