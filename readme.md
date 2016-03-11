@@ -14,6 +14,8 @@
 
 - If all nine squares are filled and neither player has three in a row, there is no winner and the grid is cleared for a new game.
 
+Play game: http://samanthadiamond.github.io/tic-tac-toe/
+
 ## Acknowledgements
 
 **Thanks** so much Jack, Joel and Badger for helping me complete this project. I wouldn't have got this done on time if it weren't for you guys!
